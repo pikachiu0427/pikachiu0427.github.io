@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Li-Da Chiu | Advanced Materials & Water Electrolysis</title>
 
   <style>
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.6;
+      line-height: 1.65;
       color: #1f2937;
       background-color: #f8fafc;
     }
@@ -17,40 +18,47 @@
     header {
       background: linear-gradient(135deg, #0f172a, #1e3a8a);
       color: white;
-      padding: 80px 20px;
+      padding: 90px 20px;
       text-align: center;
     }
 
     header h1 {
-      font-size: 42px;
+      font-size: 46px;
       margin-bottom: 10px;
+      letter-spacing: 0.5px;
     }
 
     header p {
       font-size: 18px;
-      max-width: 800px;
+      max-width: 850px;
       margin: 10px auto;
     }
 
     nav {
       background-color: #0f172a;
-      padding: 12px;
+      padding: 14px;
       text-align: center;
       position: sticky;
       top: 0;
+      z-index: 100;
     }
 
     nav a {
       color: white;
       text-decoration: none;
-      margin: 0 14px;
+      margin: 0 13px;
       font-weight: bold;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      color: #93c5fd;
     }
 
     section {
-      max-width: 1000px;
+      max-width: 1050px;
       margin: auto;
-      padding: 60px 20px;
+      padding: 60px 22px;
     }
 
     h2 {
@@ -58,11 +66,17 @@
       color: #0f172a;
       border-bottom: 3px solid #2563eb;
       padding-bottom: 8px;
+      margin-bottom: 24px;
+    }
+
+    h3 {
+      color: #1e3a8a;
+      margin-top: 0;
     }
 
     .card {
       background: white;
-      padding: 24px;
+      padding: 26px;
       margin: 20px 0;
       border-radius: 14px;
       box-shadow: 0 4px 16px rgba(0,0,0,0.08);
@@ -72,8 +86,8 @@
       display: inline-block;
       background-color: #2563eb;
       color: white;
-      padding: 10px 18px;
-      margin: 8px 8px 8px 0;
+      padding: 11px 18px;
+      margin: 10px 6px;
       border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
@@ -83,8 +97,45 @@
       background-color: #1d4ed8;
     }
 
+    .tag {
+      display: inline-block;
+      background-color: #e0ecff;
+      color: #1e3a8a;
+      padding: 6px 10px;
+      border-radius: 20px;
+      margin: 5px 5px 5px 0;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
     ul {
       padding-left: 22px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .pub-title {
+      font-weight: bold;
+      color: #111827;
+    }
+
+    .metric {
+      display: inline-block;
+      width: 220px;
+      vertical-align: top;
+      background: #eff6ff;
+      padding: 16px;
+      margin: 8px;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .metric strong {
+      display: block;
+      font-size: 24px;
+      color: #1e3a8a;
     }
 
     footer {
@@ -94,6 +145,25 @@
       padding: 30px 20px;
       margin-top: 40px;
     }
+
+    a {
+      color: #2563eb;
+    }
+
+    @media (max-width: 700px) {
+      header h1 {
+        font-size: 34px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 6px 8px;
+      }
+
+      .metric {
+        width: 90%;
+      }
+    }
   </style>
 </head>
 
@@ -102,11 +172,12 @@
   <header>
     <h1>Li-Da Chiu</h1>
     <p>M.S. Student in Nanoengineering and Nanoscience, National Taiwan University</p>
-    <p>Advanced Materials | Electrocatalysis | Water Electrolysis | Interfacial Engineering</p>
+    <p>Advanced Materials | Electrocatalysis | Water Electrolysis | Interfacial Engineering | Semiconductor R&D</p>
 
     <a class="button" href="#publications">Publications</a>
     <a class="button" href="#research">Research</a>
-    <a class="button" href="#contact">Contact</a>
+    <a class="button" href="https://scholar.google.com/citations?user=m2yh1nkAAAAJ&hl=zh-TW" target="_blank">Google Scholar</a>
+    <a class="button" href="https://www.linkedin.com/in/li-da-chiu-989617218" target="_blank">LinkedIn</a>
   </header>
 
   <nav>
@@ -115,24 +186,62 @@
     <a href="#publications">Publications</a>
     <a href="#projects">Projects</a>
     <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
     <a href="#contact">Contact</a>
   </nav>
 
   <section id="about">
     <h2>About</h2>
+
     <div class="card">
       <p>
-        I am currently pursuing my master's degree in Nanoengineering and Nanoscience
-        at National Taiwan University. My research focuses on advanced functional
-        materials, electrocatalysis, anion exchange membrane water electrolysis,
-        interfacial engineering, and plasma-assisted surface modification.
+        I am an R&D-oriented master's student in Nanoengineering and Nanoscience at
+        National Taiwan University, with interdisciplinary training in materials science,
+        nanotechnology, electrochemistry, and mechanical engineering.
       </p>
+
       <p>
-        My current work aims to develop integrated catalyst–electrode architectures
-        for efficient and durable green hydrogen production, with emphasis on
-        catalyst–substrate interactions, porous transport layers, and
-        process–performance correlations.
+        My research focuses on advanced functional materials, electrocatalysis,
+        anion exchange membrane water electrolysis, interfacial engineering,
+        and catalyst–electrode integration. I am particularly interested in
+        understanding how material design, substrate chemistry, and interfacial
+        structure govern electrochemical performance and device-level durability.
       </p>
+
+      <p>
+        I have published two first-author Q1 papers within 1.5 years, including
+        one selected as a journal cover article. My long-term interests include
+        advanced semiconductor processes, advanced packaging, metrology,
+        energy materials, and R&D-driven process engineering.
+      </p>
+
+      <div>
+        <span class="tag">Advanced Materials</span>
+        <span class="tag">Water Electrolysis</span>
+        <span class="tag">Electrocatalysis</span>
+        <span class="tag">Interfacial Engineering</span>
+        <span class="tag">Semiconductor R&D</span>
+        <span class="tag">Python Data Analysis</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="metric">
+        <strong>2</strong>
+        First-author Q1 Papers
+      </div>
+      <div class="metric">
+        <strong>1</strong>
+        Journal Cover Article
+      </div>
+      <div class="metric">
+        <strong>4.03/4.30</strong>
+        M.S. GPA
+      </div>
+      <div class="metric">
+        <strong>17+</strong>
+        Google Scholar Citations
+      </div>
     </div>
   </section>
 
@@ -142,26 +251,36 @@
     <div class="card">
       <h3>Anion Exchange Membrane Water Electrolysis</h3>
       <p>
-        Development of high-performance and durable electrodes for AEM water
-        electrolysis, focusing on device-level performance, interfacial resistance,
-        mass transport, and operational stability.
+        Development of high-performance and durable electrodes for AEM water electrolysis,
+        focusing on catalyst–substrate interactions, interfacial resistance,
+        porous transport layers, mass transport, and device-level performance.
       </p>
     </div>
 
     <div class="card">
       <h3>Functional Nanomaterials and Interface Design</h3>
       <p>
-        Design and synthesis of Ni-, Fe-, and Mo-based electrocatalysts with
-        controlled morphology, surface chemistry, and catalyst–substrate interactions.
+        Design and synthesis of Ni-, Fe-, and Mo-based nanostructured electrocatalysts
+        with controlled morphology, surface chemistry, active-site reconstruction,
+        and electrochemical activity.
       </p>
     </div>
 
     <div class="card">
-      <h3>Plasma-Assisted Surface Modification</h3>
+      <h3>Electrochemical Characterization and Mechanism Analysis</h3>
       <p>
-        Surface engineering of electrodes using plasma-based treatment to tune
-        wettability, surface defects, active-site reconstruction, and electrochemical
-        reaction kinetics.
+        Investigation of reaction kinetics, charge-transfer behavior, electrochemical
+        surface area, stability, and degradation mechanisms using LSV, CV, EIS,
+        Tafel analysis, stability tests, and accelerated stress tests.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Advanced Manufacturing and Semiconductor-Oriented R&D</h3>
+      <p>
+        Application of materials analysis, mechanism-driven problem solving,
+        process optimization, data analysis, and metrology concepts to advanced
+        semiconductor process and packaging-related research.
       </p>
     </div>
   </section>
@@ -171,30 +290,68 @@
 
     <div class="card">
       <h3>First-author Publications</h3>
+
       <ol>
         <li>
-          <strong>Li-Da Chiu et al.</strong>,
-          “NiMoO<sub>4</sub> nanowires supported on porous transport layers for
-          anion exchange membrane water electrolysis,”
-          <em>ACS Applied Nano Materials</em>, 2025.
+          <span class="pub-title">
+            NiMoO<sub>4</sub> Nanowires Supported on Stainless-Steel, Carbon, and
+            Nickel Fiber Papers as Catalysts for the Oxygen Evolution Reaction in
+            Anion Exchange Membrane Water Electrolysis
+          </span>
+          <br>
+          <strong>Li-Da Chiu</strong>, Shu-En Yu, Chun-Chang Hsueh, I-Chun Cheng,
+          Jin-Zhang Chen
+          <br>
+          <em>ACS Applied Nano Materials</em>, 2025, 8, 18446–18457.
+          <br>
+          DOI: 10.1021/acsanm.5c03175
         </li>
+
         <li>
-          <strong>Li-Da Chiu et al.</strong>,
-          “Self-catalyzed NiFe foam anode fabricated via tape-casting for
-          anion exchange membrane water electrolysis,”
-          <em>Fuel</em>, 2026.
+          <span class="pub-title">
+            Self-catalyzed NiFe Foam Anode Fabricated via Tape-Casting for Oxygen
+            Evolution Reaction in Anion Exchange Membrane Water Electrolysis
+          </span>
+          <br>
+          <strong>Li-Da Chiu</strong>, Chi-Lin Putra, Shu-En Yu, I-Chun Cheng,
+          I-Ching Ni, Cheng-I Wu, I-Chun Cheng, Jin-Zhang Chen
+          <br>
+          <em>Fuel</em>, 2026, 411, 138060.
+          <br>
+          DOI: 10.1016/j.fuel.2025.138060
         </li>
       </ol>
     </div>
 
     <div class="card">
       <h3>Co-author Publications</h3>
+
       <ol>
         <li>
-          NiFe-LDH-based porous transport layers for anion exchange membrane
-          water electrolysis, <em>International Journal of Hydrogen Energy</em>, 2026.
+          <span class="pub-title">
+            Comparative Study of NiFe-LDH Nanosheet Anodes on Stainless Steel,
+            Nickel, and Carbon Porous Transport Layers for Anion Exchange Membrane
+            Water Electrolysis
+          </span>
+          <br>
+          Chih-Wei Su, Shu-En Yu, <strong>Li-Da Chiu</strong>, I-Cheng Cheng,
+          Jin-Zhang Chen
+          <br>
+          <em>International Journal of Hydrogen Energy</em>, 2026, 199, 152862.
+          <br>
+          DOI: 10.1016/j.ijhydene.2025.152862
         </li>
       </ol>
+    </div>
+
+    <div class="card">
+      <h3>Google Scholar</h3>
+      <p>
+        For the latest publication record and citation information, please visit:
+      </p>
+      <a class="button" href="https://scholar.google.com/citations?user=m2yh1nkAAAAJ&hl=zh-TW" target="_blank">
+        View Google Scholar Profile
+      </a>
     </div>
   </section>
 
@@ -202,29 +359,39 @@
     <h2>Selected Projects</h2>
 
     <div class="card">
-      <h3>NiMoO<sub>4</sub> Nanowire Electrodes for AEMWE</h3>
+      <h3>NiMoO<sub>4</sub> Nanowire Electrodes for AEM Water Electrolysis</h3>
       <p>
-        Hydrothermal growth of NiMoO<sub>4</sub> nanowires on stainless-steel fiber
-        paper, carbon paper, and nickel fiber paper to investigate substrate-dependent
-        nanostructure formation, OER activity, and AEMWE single-cell performance.
+        Hydrothermal growth of NiMoO<sub>4</sub> nanowires on stainless-steel fiber paper,
+        carbon paper, and nickel fiber paper to investigate substrate-dependent
+        nanostructure formation, catalyst–substrate interactions, OER activity,
+        and AEMWE single-cell performance.
       </p>
     </div>
 
     <div class="card">
       <h3>Self-Catalyzed NiFe Foam Anode</h3>
       <p>
-        Development of a monolithic NiFe foam anode using a tape-casting-based
-        process to eliminate the conventional catalyst-layer/porous-transport-layer
-        interface and improve electrode durability.
+        Development of a monolithic NiFe foam anode using a tape-casting-based process.
+        The integrated electrode architecture eliminates the conventional catalyst-layer/
+        porous-transport-layer interface and improves electrode functionality for
+        oxygen evolution reaction and AEM water electrolysis.
       </p>
     </div>
 
     <div class="card">
-      <h3>Electrochemical Data Analysis</h3>
+      <h3>Python-Based Electrochemical Data Analysis</h3>
       <p>
-        Python-based processing workflows for LSV, CV, EIS, Tafel analysis,
-        iR correction, overpotential extraction, and batch comparison of
-        electrocatalytic performance.
+        Development of data-processing workflows for LSV, CV, EIS, Tafel analysis,
+        iR correction, overpotential extraction, and batch comparison of electrocatalytic
+        performance.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Plasma-Assisted Surface Modification</h3>
+      <p>
+        Exploration of plasma treatment as a surface engineering strategy to tune
+        wettability, surface chemistry, defect structures, and electrochemical interfaces.
       </p>
     </div>
   </section>
@@ -234,11 +401,62 @@
 
     <div class="card">
       <ul>
-        <li><strong>Materials synthesis:</strong> hydrothermal synthesis, electrode fabrication, tape-casting-based processing</li>
-        <li><strong>Characterization:</strong> SEM, XRD, XPS, EDS, contact angle measurement</li>
-        <li><strong>Electrochemistry:</strong> LSV, CV, EIS, Tafel analysis, stability test, accelerated stress test</li>
-        <li><strong>Simulation and design:</strong> COMSOL, ANSYS, Inventor, AutoCAD</li>
-        <li><strong>Programming:</strong> Python for electrochemical data analysis</li>
+        <li><strong>Materials characterization:</strong> SEM, XRD, XPS, EDS, electrochemical analysis</li>
+        <li><strong>Electrochemistry:</strong> LSV, CV, EIS, Tafel analysis, stability tests, accelerated stress tests</li>
+        <li><strong>Physical simulation:</strong> ANSYS, COMSOL Multiphysics, fluid flow, heat transfer, electric currents</li>
+        <li><strong>Programming and data science:</strong> Python, TensorFlow, PyTorch, C, Excel</li>
+        <li><strong>Mechanical design:</strong> SolidWorks, Autodesk Inventor, AutoCAD, Blender</li>
+        <li><strong>Languages:</strong> Mandarin native, English TOEIC 740</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience & Education</h2>
+
+    <div class="card">
+      <h3>Education</h3>
+      <p>
+        <strong>National Taiwan University</strong>, Taiwan<br>
+        M.S. in Nanoengineering and Nanoscience, Graduate School of Advanced Technology<br>
+        2024.09 – 2026.07 | GPA: 4.03/4.30
+      </p>
+
+      <p>
+        <strong>National Tsing Hua University</strong>, Taiwan<br>
+        B.S. in Power Mechanical Engineering<br>
+        2020.09 – 2024.06
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Work Experience</h3>
+
+      <p>
+        <strong>Quality / Metrology Intern, Micron Technology, Taiwan</strong><br>
+        2024.07 – 2024.09
+      </p>
+      <ul>
+        <li>Conducted pre-alignment error data analysis of CD-SEM alignment and pattern identification.</li>
+        <li>Collaborated with cross-functional teams to support process improvement.</li>
+      </ul>
+
+      <p>
+        <strong>Electromechanical Engineering Intern, Zhen Ding Tech., Taiwan</strong><br>
+        2023.07 – 2023.08
+      </p>
+      <ul>
+        <li>Assisted in the design and integration of automated mechanical systems.</li>
+        <li>Conducted sensor calibration and system-level testing.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Awards</h3>
+      <ul>
+        <li>NTU GSAT Elite Master's Student Scholarship, 2025</li>
+        <li>NTU GSAT Honorable Mention for Excellence in R&D Internship, 2024</li>
+        <li>NTHU Undergraduate Research Honorable Mention, 2023</li>
       </ul>
     </div>
   </section>
@@ -247,11 +465,10 @@
     <h2>Contact</h2>
 
     <div class="card">
-      <p><strong>Email:</strong> your-email@example.com</p>
-      <p><strong>Google Scholar:</strong> insert your link</p>
-      <p><strong>LinkedIn:</strong> insert your link</p>
-      <p><strong>GitHub:</strong> insert your link</p>
-      <p><strong>CV:</strong> insert your CV link</p>
+      <p><strong>Email:</strong> chiulida@gmail.com</p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/li-da-chiu-989617218" target="_blank">www.linkedin.com/in/li-da-chiu-989617218</a></p>
+      <p><strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=m2yh1nkAAAAJ&hl=zh-TW" target="_blank">Google Scholar Profile</a></p>
+      <p><strong>Research fields:</strong> Nanotechnology, Energy, Materials, Electrocatalysis, Water Electrolysis</p>
     </div>
   </section>
 
